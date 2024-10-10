@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideias de Looks - Moda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Ideias de Looks para Cada Estação</h1>
+        <div id="season-selector">
+            <h2>Escolha uma estação:</h2>
+            <button onclick="showLooks('verao')">Verão</button>
+            <button onclick="showLooks('outono')">Outono</button>
+            <button onclick="showLooks('inverno')">Inverno</button>
+            <button onclick="showLooks('primavera')">Primavera</button>
+        </div>
+        <div id="looks-container" style="display: none;">
+            <h2 id="season-title"></h2>
+            <ul id="looks-list"></ul>
+            <button onclick="reset()">Escolher outra estação</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
